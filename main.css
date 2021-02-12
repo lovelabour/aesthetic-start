@@ -1,0 +1,57 @@
+@import url("/Users/g/.cache/wal/colors.css");
+
+html { align-items: center; display: flex; height: 100%;
+justify-content: center; margin: 0; background-color: #fefdfb; font:
+22px "Poppins Medium", Futura, sans-serif; }
+
+body { display: flex; margin: 1em; padding: 1em; }
+
+h1 { font-size: 4.5em; margin: 0; text-align: center; grid-column: 1 /
+								   -1; color: var(--color8); font-weight: 600; font-style: normal;}
+
+h2 { color: var(--color2); text-align: center; margin: 0; font: 1.25em
+    "Futura", sans-serif; font-style: italic;
+    
+}
+
+
+h3 { color: #ffffff; left: 20px; position: relative; top: -30px;
+    font-size: 1.6em; font-family: "Poppins", Futura, sans-serif
+    important!; font-style: italic; z-index: 5; } a { text-decoration:
+    none; font-size:20px; color: var(--color3);
+
+}
+
+a:focus, a:hover { color: #807d93; }
+
+nav { display: grid; grid-row-gap: 0em; grid-template-rows: 150px 50px
+      50px 320px; margin: 0 1em; padding: 1em 0; layout-center: 100%;
+      }
+
+#main_window { background-color: #ffffff; width: 750px; height: 350px;
+	text-align: center; padding-top: 20px; margin: 0px auto;
+	position: relative; top: 0%; left: 0%; border: 11px solid
+	#b5c4bd; border-top-width: 18px; }
+
+#main_window::after { border-bottom: 65px solid #b5c4bd; border-left:
+    0px solid transparent; border-right: 50px solid transparent;
+    height: 0px; bottom: 370px; width: 120px; right: 591px; position:
+    absolute; display: inline-block; content: ""; }
+
+ul { list-style-type: none; margin: 0px 18px 0px 0px; padding: 0px;
+      white-space: nowrap; color: var(--color1); display: grid;
+      grid-template-columns: 1fr 1fr 1fr; column-gap: 75px; }
+
+li:first-child { font-weight: 600; line-height: 50px; font-size:
+      1.5em; font-style: normal; }
+
+li:nth-of-type(2) { font-weight: 600; line-height: 50px; color:
+      var(--color3); font-size: 1.5em; font-style: normal; }
+
+li:nth-of-type(3) { font-weight: 600; line-height: 50px; font-size:
+    1.5em; font-style: normal; }
+
+li { font-style: italic; font-family: "Avenir Next Medium"; }
+
+.gridpicture { vertical-align: baseline; object-fit: none;}
+

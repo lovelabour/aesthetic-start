@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>welcome!</title>
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+    <link href="http://fonts.googleapis.com/css?family=Poppins" rel="stylesheet" type="text/css">
+    <link href="main.css" rel="stylesheet">
+    <body>
+      <nav>
+        <label id="lblGreetings"></label>
+	<span id="12htime"></span>
+	<h3>links</h3>
+	<div id="main_window">
+	  <ul>
+	  <li>life</li>
+	  <li>uni</li>
+	  <li>social</li>
+	      <div class="gridpicture">
+		<img src="pics/icon1.jpg" width="144" height="144">
+	      </div>
+	      	      <div class="gridpicture">
+			<img src="pics/icon2.jpg" width="144" height="144">
+			 </div>
+		 <div class="gridpicture">	
+	    	   <img src="pics/icon3.jpg" width="144" height="144">
+		    </div>
+	  <li><a href="https://google.com">google</a></li>
+	  <li><a href="https://moodle.telt.unsw.edu.au/">moodle</a></li>
+	  <li><a href="https://www.facebook.com/">facebook</a></li>
+	  <li><a href="https://youtube.com">youtube</a></li>
+	  <li><a href="https://my.unsw.edu.au/">timetable</a></li>
+	  <li><a href="https://reddit.com">reddit</a></li>
+	  <li><a href="https://open.spotify.com">spotify</a></li>
+	  <li><a href="https://outlook.live.com">outlook</a></li>
+	  <li><a href="https://twitter.com">twitter</a></li>
+	  <li><a href="https://bom.gov.au">weather</a></li>
+	  <li><a href="https://drive.google.com/drive/u/0/my-drive">drive</a></li>
+	  <li><a href="https://www.tumblr.com">tumblr</a></li>
+	</ul>
+	</div>
+      </nav>
+    </body>
+  </head>
+  <script>
+    var myDate = new Date();
+    var hrs = myDate.getHours();
+
+    var greet;
+
+    if (hrs < 5)
+        greet = 'go sleep!!';
+    else if (hrs >= 5 && hrs <= 11)
+	greet = 'good morning!!';
+    else if (hrs >= 11 && hrs <= 17)
+        greet = 'good afternoon';
+    else if (hrs >= 17 && hrs <= 24)
+        greet = 'good evening!!';
+
+    document.getElementById('lblGreetings').innerHTML =
+        '<h1>' + greet + '</h1>';
+	</script>
+  <script>
+    let formattedTime = new Date().toLocaleTimeString('en-US', {hour: '2-digit', minute: '2-digit'});
+    document.getElementById("12htime").innerHTML = '<h2> the time is ' + formattedTime + '</h2>';
+    </script>
+  </html>
